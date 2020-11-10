@@ -1,0 +1,21 @@
+---
+title: Checkout (USD)
+---
+/! Main
+#main.wrapper.style1
+  .container
+    header.major
+      h2 Payments
+    /! Content
+    section#content
+      .content
+        header
+          <!-- Load Stripe.js on your website. -->
+          <script src="https://js.stripe.com/v3"></script>
+
+          <!-- Create a button that your customers click to complete their purchase. -->
+          h4 XBA Practitioner Training Live Online 
+          a.button id="checkout-button-sku_FS0P3Tt8gS8qbD" Checkout
+          div id="error-message"
+
+<script> (function() { var stripe = Stripe('pk_live_N6FQDNaid44nIOxvlwFQ2q4z00b5PxjFcK'); var checkoutButton = document.getElementById('checkout-button-price_1Hhv2XEsJxr8Fi0FcTHzaqCU'); checkoutButton.addEventListener('click', function () { stripe.redirectToCheckout({ lineItems: [{price: 'price_1Hhv2XEsJxr8Fi0FcTHzaqCU', quantity: 1}], mode: 'payment', successUrl: 'http://xscalealliance.org/paid.html', cancelUrl: 'http://xscalealliance.org/payment/meridian/checkout.html' }) .then(function (result) { if (result.error) { var displayError = document.getElementById('error-message'); displayError.textContent = result.error.message; } }); }); })(); </script>
