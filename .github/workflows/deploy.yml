@@ -14,7 +14,7 @@ jobs:
     - name: Check Ruby Versions
       run: ls $RUNNER_TOOL_CACHE/Ruby
     - uses: actions/checkout@v1
-    - uses: actions/setup-ruby@v1
+    - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.5'
     - name: Cache Ruby Gems
