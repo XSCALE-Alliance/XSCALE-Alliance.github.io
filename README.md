@@ -3,7 +3,7 @@ This is the website for the XSCALE Alliance
 The site is deployed to the `master` branch and is hosted on Github pages.
 
 You can make changes on the `source` branch.
- ...
+ ....
 [![Actions Status](https://github.com/XSCALE-Alliance/XSCALE-Alliance.github.io/workflows/verify_pull_request/badge.svg)](https://github.com/XSCALE-Alliance/XSCALE-Alliance.github.io/actions)
 
 [![Actions Status](https://github.com/XSCALE-Alliance/XSCALE-Alliance.github.io/workflows/deploy/badge.svg)](https://github.com/XSCALE-Alliance/XSCALE-Alliance.github.io/actions)
